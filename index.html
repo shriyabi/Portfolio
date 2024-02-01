@@ -1047,6 +1047,44 @@
             }
         }
 
+        .modal {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #011f2f;
+            transition: all 0.4s;
+            visibility: hidden;
+            opacity: 0;
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .content {
+            position: absolute;
+            background: #219EBC;
+            width: 35vw;
+            padding: 1em 2em;
+        }
+
+        .modal:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .box-close {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            color: #fe0606;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
         }
 
         @media only screen and (min-width: 451px) and (max-width: 1999px) {
@@ -1932,6 +1970,44 @@
                 border-color:rgb(194, 103, 0); 
                 border-width:0.5em;
             }
+
+            .modal {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #011f2f;
+            transition: all 0.4s;
+            visibility: hidden;
+            opacity: 0;
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .content {
+            position: absolute;
+            background: #219EBC;
+            width: 35vw;
+            padding: 1em 2em;
+        }
+
+        .modal:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .box-close {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            color: #fe0606;
+            text-decoration: none;
+            font-size: 30px;
+        }
         }
 
 
@@ -3173,6 +3249,43 @@
                 opacity: 1;
             }
         }
+        .modal {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #011f2f;
+            transition: all 0.4s;
+            visibility: hidden;
+            opacity: 0;
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .content {
+            position: absolute;
+            background: #219EBC;
+            width: 35vw;
+            padding: 1em 2em;
+        }
+
+        .modal:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .box-close {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            color: #fe0606;
+            text-decoration: none;
+            font-size: 30px;
+        }
         }
         
     </style>
@@ -3249,24 +3362,39 @@
             PROJECTS </a> </h2>
     <div class="flex-container proj-box-cont">
         <div class="project-box">
-            <h3 class = "project-title" style="color: #dcf4fc; margin: auto;">Chatbot for Mental Health Awareness</h3>
-            <div>
+            <h3 style="color: #dcf4fc; margin: auto;">Chatbot for Mental Health Awareness</h3>
+            <iframe style="color:rgb(197, 105, 1);" src="https://www.wevideo.com/view/3252017933"
+                style="margin: auto; margin-top: 2vh;"> </iframe>
+            <div style="height: 10%">
+                <p class="project-text">
+                    SKILLS:
+                </p>
+                <p class="skill-text"> PyTorch, Kaggle,
+                    Cloud-instance, Google Search API</p>
+            </div>
+
+            <a href="#Chatbot">
+                <h3>
+                    Click for More Information </h3>
+            </a>
+        <div id="Chatbot" class="modal">
+            <div class="content">
+                <h2 style="text-align: center;">
+                    A chatbot to raise mental health awareness...
+                </h2>
+                <br>
                 <p class="project-desc"> A conversational A.I.-based agent utilizing generative
                     learning and Google
                     Search API to provide
                     responses
                     to mental health questions and respective links to resources. </p>
+                <br>
+                <a href="#" class="popbox-close">
+                    X
+                </a>
             </div>
-            <iframe style="color:rgb(197, 105, 1);" src="https://www.wevideo.com/view/3252017933"
-                style="margin-top: 2vh;"> </iframe>
-            <div style="height: 10%">
-                <p class="project-text" style = "color: #FB8500; text-align: left;">
-                    SKILLS:
-                </p>
-                <p class="skill-text" style = "text-align: left;"> PyTorch, Kaggle,
-                    Cloud-instance, Google Search API</p>
             </div>
-        </div>
+            </div>
         <div class="project-box">
             <h3 class = "project-title" style ="color: #dcf4fc; margin: auto;"> BioKnee 1.0 </h3>
 
