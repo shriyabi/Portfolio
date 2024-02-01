@@ -2732,10 +2732,18 @@
 
             input{
                 border-color:#011f2f;
-                border-width:1em; 
+                border-width:0.3em; 
                 color: #011f2f; 
                 border-style: solid;
                 font-size: 20px; 
+            }
+
+            button{
+                font-size: 2vh;
+                color: #003652; 
+                margin-top: 2vh;
+                border-color:rgb(194, 103, 0); 
+                border-width:0.5em;
             }
         }
     </style>
@@ -2982,9 +2990,10 @@
         <form method="POST" action="https://script.google.com/macros/s/AKfycbxhIvwwLpW00ff88bdzD-H8VeBugqDUMoqnWnw7AedoW5n0omP3Qa-28d7fBmbM7DY/exec">
   <input name="Email" type="email" placeholder="Email" required style = "background-color: #adeaff; text-decoration: #003652;"> 
   <input name="Name" type="text" placeholder="Name" required style = "background-color: #adeaff; text-decoration: #003652;">
-  <input name="Subject" type="text" placeholder="Subject <br> <br> <br>" required style = "background-color: #adeaff; text-decoration: #003652;">
+  <br>
+  <input name="Subject" type="text" placeholder="Subject" required style = "background-color: #adeaff; text-decoration: #003652; height:5vh;">
   <br> 
-  <button type="submit" style =" background-color: #FFB703; font-size: 2vh; color: #003652; margin-top: 2vh;"">Send</button>
+  <button type="submit" style =" background-color: #FFB703;">Send</button>
 </form>
         </div>
 
