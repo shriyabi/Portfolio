@@ -883,14 +883,22 @@
                 visibility: visible;
             }
 
-            text .input{
-                background-color: #adeaff; font-size: 0.5em; text-decoration: #003652; margin-right:0.25vw;
+            input{
+                border-color:#011f2f;
+                border-width:0.3em; 
+                text-decoration-color: #011f2f; 
+                border-style: solid;
+                font-size: 12px; 
             }
 
-            button .submit{
-                background-color: #FFB703; font-size: 1em; color: #003652; margin-top: 0.5vh;
-
+            button{
+                font-size: 1vh;
+                text-decoration-color: #003652; 
+                margin-top: 0.5vh;
+                border-color:rgb(194, 103, 0); 
+                border-width:0.3em;
             }
+
         }
 
         @media only screen and (min-width: 451px) and (max-width: 1999px) {
@@ -1760,13 +1768,20 @@
                 visibility: visible;
             }
 
-            text .input{
-                background-color: #adeaff; font-size: 1.5em; text-decoration: #003652; margin-right:0.5vw;
+            input{
+                border-color:#011f2f;
+                border-width:0.2em; 
+                text-decoration-color: #011f2f; 
+                border-style: solid;
+                font-size: 16px; 
             }
 
-            button .submit{
-                background-color: #FFB703; font-size: 2em; color: #003652; margin-top: 1vh;
-
+            button{
+                font-size: 2vh;
+                text-decoration-color: #003652; 
+                margin-top: 2vh;
+                border-color:rgb(194, 103, 0); 
+                border-width:0.5em;
             }
         }
 
@@ -2733,14 +2748,14 @@
             input{
                 border-color:#011f2f;
                 border-width:0.3em; 
-                color: #011f2f; 
+                text-decoration-color: #011f2f; 
                 border-style: solid;
                 font-size: 20px; 
             }
 
             button{
                 font-size: 2vh;
-                color: #003652; 
+                text-decoration-color: #003652; 
                 margin-top: 2vh;
                 border-color:rgb(194, 103, 0); 
                 border-width:0.5em;
@@ -2991,7 +3006,7 @@
   <input name="Email" type="email" placeholder="Email" required style = "background-color: #adeaff; text-decoration: #003652;"> 
   <input name="Name" type="text" placeholder="Name" required style = "background-color: #adeaff; text-decoration: #003652;">
   <br>
-  <input name="Subject" type="text" placeholder="Subject" required style = "background-color: #adeaff; text-decoration: #003652; height:5vh;">
+  <input name="Subject" type="text" placeholder="Subject" required style = "background-color: #adeaff; text-decoration: #003652; height:10vh; display:inline;">
   <br> 
   <button type="submit" style =" background-color: #FFB703;">Send</button>
 </form>
