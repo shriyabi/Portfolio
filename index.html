@@ -898,7 +898,154 @@
                 margin-top: 0.5vh;
                 border-color:rgb(194, 103, 0); 
                 border-width:0.3em;
+            } 
+
+
+
+
+
+
+
+
+            *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+        
+
+
+        .m_scroll_arrows {
+            display: block;
+            width: 5px;
+            height: 5px;
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+
+            border-right: 2px solid #FB8500;
+            border-bottom: 2px solid #FB8500;
+            margin: 0 0 3px 4px;
+
+            width: 1em;
+            height: 1em;
+        }
+
+
+        .one {
+            margin-top: 1px;
+        }
+
+        .one,
+        .two,
+        .three {
+            transition-delay: 3s;
+            -webkit-animation: mouse-scroll 1s infinite;
+            -moz-animation: mouse-scroll 1s infinite;
+            animation: mouse-scroll 1s infinite;
+
+        }
+
+        .one {
+            transition-delay: 3s;
+            -webkit-animation-delay: 3.1s;
+            -moz-animation-delay: 3.1s;
+            -webkit-animation-direction: alternate;
+
+            animation-direction: alternate;
+            animation-delay: alternate;
+        }
+
+        .two {
+            transition-delay: 3s;
+            -webkit-animation-delay: 3.2s;
+            -moz-animation-delay: 3.2s;
+            -webkit-animation-direction: alternate;
+
+            animation-delay: 3.2s;
+            animation-direction: alternate;
+
+            margin-top: -6px;
+        }
+
+        .three {
+            transition-delay: 3s;
+            -webkit-animation-delay: .3s;
+            -moz-animation-delay: .3s;
+            -webkit-animation-direction: alternate;
+
+            animation-delay: 3.3s;
+            animation-direction: alternate;
+
+
+            margin-top: -6px;
+        }
+
+        @-webkit-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
             }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
 
         }
 
@@ -2764,6 +2911,268 @@
                 border-color:rgb(194, 103, 0); 
                 border-width:0.5em;
             }
+
+
+            *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+        .mouse_scroll {
+            display: block;
+            margin: 0 auto;
+            width: 24px;
+            height: 100px;
+            margin-top: 125px;
+            transition-delay: 3s;
+        }
+
+
+        .m_scroll_arrows {
+            display: block;
+            width: 5px;
+            height: 5px;
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+
+            border-right: 2px solid #FB8500;
+            border-bottom: 2px solid #FB8500;
+            margin: 0 0 3px 4px;
+
+            width: 1em;
+            height: 1em;
+        }
+
+
+        .one {
+            margin-top: 1px;
+        }
+
+        .one,
+        .two,
+        .three {
+            transition-delay: 3s;
+            -webkit-animation: mouse-scroll 1s infinite;
+            -moz-animation: mouse-scroll 1s infinite;
+            animation: mouse-scroll 1s infinite;
+
+        }
+
+        .one {
+            transition-delay: 3s;
+            -webkit-animation-delay: 3.1s;
+            -moz-animation-delay: 3.1s;
+            -webkit-animation-direction: alternate;
+
+            animation-direction: alternate;
+            animation-delay: alternate;
+        }
+
+        .two {
+            transition-delay: 3s;
+            -webkit-animation-delay: 3.2s;
+            -moz-animation-delay: 3.2s;
+            -webkit-animation-direction: alternate;
+
+            animation-delay: 3.2s;
+            animation-direction: alternate;
+
+            margin-top: -6px;
+        }
+
+        .three {
+            transition-delay: 3s;
+            -webkit-animation-delay: .3s;
+            -moz-animation-delay: .3s;
+            -webkit-animation-direction: alternate;
+
+            animation-delay: 3.3s;
+            animation-direction: alternate;
+
+
+            margin-top: -6px;
+        }
+
+        .mouse {
+            height: 2.75em;
+            width: 1.5em;
+            border-radius: 14px;
+            transform: none;
+            border: 2px solid #FFB703;
+            top: 170px;
+        }
+
+        .wheel {
+            height: 5px;
+            width: 2px;
+            display: block;
+            margin: 5px auto;
+            background: #219EBC;
+            position: relative;
+
+            height: 4px;
+            width: 4px;
+            border: 2px solid #219EBC;
+            -webkit-border-radius: 0.5em;
+            border-radius: 0.5em;
+        }
+
+        .wheel {
+            -webkit-animation: mouse-wheel 0.6s linear infinite;
+            -moz-animation: mouse-wheel 0.6s linear infinite;
+            animation: mouse-wheel 0.6s linear infinite;
+        }
+
+        @-webkit-keyframes mouse-wheel {
+            0% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translateY(6px);
+                -ms-transform: translateY(6px);
+                transform: translateY(6px);
+            }
+        }
+
+        @-moz-keyframes mouse-wheel {
+            0% {
+                top: 1px;
+            }
+
+            25% {
+                top: 2px;
+            }
+
+            50% {
+                top: 3px;
+            }
+
+            75% {
+                top: 2px;
+            }
+
+            100% {
+                top: 1px;
+            }
+        }
+
+        @-o-keyframes mouse-wheel {
+
+            0% {
+                top: 1px;
+            }
+
+            25% {
+                top: 2px;
+            }
+
+            50% {
+                top: 3px;
+            }
+
+            75% {
+                top: 2px;
+            }
+
+            100% {
+                top: 1px;
+            }
+        }
+
+        @keyframes mouse-wheel {
+
+            0% {
+                top: 1px;
+            }
+
+            25% {
+                top: 2px;
+            }
+
+            50% {
+                top: 3px;
+            }
+
+            75% {
+                top: 2px;
+            }
+
+            100% {
+                top: 1px;
+            }
+        }
+
+        @-webkit-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes mouse-scroll {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
         }
         
     </style>
@@ -2777,6 +3186,17 @@
     <h3 style="text-align: center"> Hello! I am </h3>
     <h1 class="line-1 anim-typewriter title"> SHRIYA BIDDALA </h1>
     <div class="roles"> A.I.-Nerd Engineer Student Web-Developer Equity-Activist Tech-Enthusiast</div>
+
+    <div class="mouse_scroll">
+        <div class="mouse" style = "transition-delay: 3s;">
+            <div class="wheel"></div>
+        </div>
+        <div>
+            <span class="m_scroll_arrows one"></span>
+            <span class="m_scroll_arrows two"></span>
+            <span class="m_scroll_arrows three"></span>
+        </div>
+    </div>
 
     <div class="container-about-me">
         <div class=" fade-in1 left-oriented about-me">
