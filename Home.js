@@ -189,7 +189,7 @@ function dropDown() {
     container.classList.toggle('show');
   });
 }
-dropDown();
+/*dropDown();*/
 
 
 /*  if (index < words.length - 1) {
