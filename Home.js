@@ -164,32 +164,37 @@ window.addEventListener("load", function () {
 });
 
 
+var clicked = false;
+var container;
 function dropDown() {
-  const container = document.createElement('div');
-  container.className = 'dropdown-container';
-  const icons = ['fa-house', 'fa-building-columns', 'fa-wrench', 'fa-award', 'fa-message'];
-  const links = ['#Home', '#Education', '#Projects', '#Honors', '#Contact'];
-  icons.forEach((icon, index) => {
-    const link = document.createElement('a');
-    link.href = links[index];
-    link.style.textDecoration = 'none';
-    link.style.color = '#FB8500'
-
-    const iconElement = document.createElement('i');
-    iconElement.className = `fa-solid ${icon} fa-lg`;
-    iconElement.style.paddingLeft = '1em';
-    iconElement.style.display = 'inline-flex';
-
-    link.appendChild(iconElement);
-    container.appendChild(link);
-  });
-
-  document.getElementById('dropdown-root').appendChild(container);
-  document.getElementById('toggle-button').addEventListener('click', () => {
-    container.classList.toggle('show');
-  });
+    if (!container) {
+        container = document.createElement('div');
+        container.className = 'dropdown-container';
+        const icons = ['fa-house', 'fa-building-columns', 'fa-wrench', 'fa-award', 'fa-message'];
+        const links = ['#Home', '#Projects', '#Education', '#Honors', '#Contact'];
+        icons.forEach((icon, index) => {
+            const link = document.createElement('a');
+            link.href = links[index];
+            link.style.textDecoration = 'none';
+            link.style.color = '#FB8500';
+            const iconElement = document.createElement('i');
+            iconElement.className = `fa-solid ${icon} fa-lg`;
+            iconElement.style.paddingLeft = '1em';
+            iconElement.style.display = 'inline-flex';
+            link.appendChild(iconElement);
+            container.appendChild(link);
+        });
+        document.getElementById('dropdown-root').appendChild(container);
+    }
+    if (!clicked) {
+        container.classList.add('show');
+    } else {
+        container.classList.remove('show');
+    }
+    clicked = !clicked;
 }
-/*dropDown();*/
+
+document.getElementById('toggle-button').addEventListener('click', toggleDropdown);
 
 
 /*  if (index < words.length - 1) {
