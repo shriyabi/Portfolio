@@ -179,7 +179,7 @@ function dropDown() {
             link.style.color = '#FB8500';
             const iconElement = document.createElement('i');
             iconElement.className = `fa-solid ${icon} fa-lg`;
-            iconElement.style.paddingLeft = '1em';
+            iconElement.style.paddingLeft = '2em';
             iconElement.style.display = 'inline-flex';
             link.appendChild(iconElement);
             container.appendChild(link);
