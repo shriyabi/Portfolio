@@ -171,7 +171,7 @@ function dropDown() {
         container = document.createElement('div');
         container.className = 'dropdown-container';
         const icons = ['fa-house', 'fa-building-columns', 'fa-wrench', 'fa-award', 'fa-message'];
-        const links = ['#Home', '#Projects', '#Education', '#Honors', '#Contact'];
+        const links = ['#Home', '#Education', '#Projects', '#Honors', '#Contact'];
         icons.forEach((icon, index) => {
             const link = document.createElement('a');
             link.href = links[index];
