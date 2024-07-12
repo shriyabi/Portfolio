@@ -170,8 +170,8 @@ function dropDown() {
     if (!container) {
         container = document.createElement('div');
         container.className = 'dropdown-container';
-        const icons = ['fa-house', 'fa-building-columns', 'fa-suitcase', 'fa-award', 'fa-message'];
-        const links = ['#Home', '#Education', '#Projects', '#Honors', '#Contact'];
+        const icons = ['fa-house', 'fa-building-columns', 'fa-suitcase', 'fa-award', 'fa-message', 'fa-file'];
+        const links = ['#Home', '#Education', '#Projects', '#Honors', '#Contact', 'Shriya Biddala - Resume.pdf'];
         icons.forEach((icon, index) => {
             const link = document.createElement('a');
             link.href = links[index];
