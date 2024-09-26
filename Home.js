@@ -197,6 +197,8 @@ function dropDown() {
 document.getElementById('toggle-button').addEventListener('click', toggleDropdown);
 
 
+
+
 /*  if (index < words.length - 1) {
     words[index + 1].style.opacity = '1'; // Show the next word
   } else {
