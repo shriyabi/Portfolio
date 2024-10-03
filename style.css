@@ -3,11 +3,6 @@ body {
     padding: 0;
 }
 
-.contact{
-    border-radius: 2em;
-    width: auto;
-    height: auto; 
-}
 
 @media only screen and (max-width: 450px) {
     /*.container {
@@ -769,7 +764,7 @@ body {
         background-color: #8ECAE6;
         box-shadow: 0 0 2em #219EBC;
         text-align: center;
-       
+        width: 100%;
         top: 100px;
         position: relative;
         margin-top: 30vh;
@@ -1884,7 +1879,7 @@ body {
         background-color: #8ECAE6;
         box-shadow: 0 0 2em #219EBC;
         text-align: center;
-        
+        width: 100%;
         top: 100px;
         position: relative;
         margin-top: 30vh;
@@ -2915,7 +2910,7 @@ body {
         background-color: #8ECAE6;
         box-shadow: 0 0 2em #219EBC;
         text-align: center;
-        
+        width: 100%;
         top: 100px;
         position: relative;
         margin-top: 40vh;
